@@ -1,0 +1,131 @@
+$black: #000000
+$white: #ffffff
+$yellow: #F8C405
+$font: 'Pathway Gothic One', sans-serif
+$sFont: 'Oregano', cursive
+
+*
+	padding: 0
+	margin: 0
+	text-decoration: none
+	list-style: none
+	outline: none
+	vertical-align: bottom
+	white-space: normal
+	border: 0
+
+::selection
+	background-color: $yellow
+	color: $black
+
+body
+	font-family: $font
+	color: $white
+	-webkit-font-smoothing: antialised 
+
+.content
+	margin-left: 3%
+
+#fp-nav ul li a span
+	background-color: $yellow
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+	background-color: $yellow
+
+#fullpage
+	.home
+		background-color: $black
+		h1
+			position: absolute
+			top: 50%
+			transform: translateY(-50%) translateX(-50%)
+			left: 50%
+			font-size: 5em
+			font-weight: 300
+			font-family: $sFont
+		p
+			position: absolute
+			top: 60%
+			transform: translateY(-60%) translateX(-55%)
+			left: 50%
+			font-size: 1.4em
+			font-weight: 300
+			font-family: $sFont
+			color: $yellow
+	.about
+		background-color: $black
+		h1,p
+			max-width: 700px
+			text-align: center
+			font-size: 1em
+			line-height: 25px
+			margin: 0 auto
+		h1
+			font-family: $sFont
+			font-size: 3em
+			color: $yellow
+		p
+			font-size: 1.3em
+			line-height: 30px
+			letter-spacing: 1.1
+	.exp
+		background-color: $black
+		h2
+			font-family: $sFont
+			font-size: 2.3em
+			color: $yellow
+			font-weight: 400
+		.bordertitle
+			margin-bottom: 3%
+			width: 25px
+			height: 4px
+			background: $white
+			margin-top: 15px
+		section
+			margin-bottom: 2%
+			p.type
+				font-size: 1.1em
+				font-weight: 300
+				margin-top: 10px
+				letter-spacing: 1.1
+			a
+				font-size: 1.1em
+				font-weight: 300
+				margin-top: 10px
+				color: $white
+				letter-spacing: 1.1
+			h3
+				font-size: 1.7em
+				font-weight: 400
+				color: $yellow
+				text-transform: uppercase
+	.contact
+		background-color: $black
+		.bordertitle
+			margin-bottom: 3%
+			width: 25px
+			height: 4px
+			background: $white
+			margin-top: 15px
+		h2
+			text-transform: uppercase
+			font-weight: 1em
+
+		h3
+			font-size: 2.5em
+			font-weight: 700
+			margin-bottom: 20px
+		a
+			color: $yellow
+		ul li
+			font-size: 1em
+			text-transform: uppercase
+			display: inline-block
+			margin-right: 2%
+			&:hover
+				font-weight: 700
+			a
+				color: $white
+				&:hover
+					color: $yellow
+		
