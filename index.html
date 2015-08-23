@@ -5,10 +5,165 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Abhishek Kambli</title>
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One|Oregano' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<style>
+		.blinking-cursor {
+			  font-weight: 100;
+			  font-size: 30px;
+			  color: #ffffff;
+			  -webkit-animation: 1s blink step-end infinite;
+			  -moz-animation: 1s blink step-end infinite;
+			  -ms-animation: 1s blink step-end infinite;
+			  -o-animation: 1s blink step-end infinite;
+			  animation: 1s blink step-end infinite;
+			}
+
+			@keyframes "blink" {
+			  from, to {
+			    color: transparent;
+			  }
+			  50% {
+			    color: #F8C405;
+			  }
+			}
+
+			@-moz-keyframes blink {
+			  from, to {
+			    color: transparent;
+			  }
+			  50% {
+			    color: #F8C405;
+			  }
+			}
+
+			@-webkit-keyframes "blink" {
+			  from, to {
+			    color: transparent;
+			  }
+			  50% {
+			    color: #F8C405;
+			  }
+			}
+
+			@-ms-keyframes "blink" {
+			  from, to {
+			    color: transparent;
+			  }
+			  50% {
+			    color: #F8C405;
+			  }
+			}
+
+			@-o-keyframes "blink" {
+			  from, to {
+			    color: transparent;
+			  }
+			  50% {
+			    color: #F8C405;
+			  }
+			}
+
+	</style>
 </head>
 <body>
 	
-	Abhishek Kambli
+<div id="fullpage">
+	<div class="section home">
+		
+		<div id="canvas-particles">
+			<h1>Abhishek</h1>
+			<p>Design - Code - Life <span class="blinking-cursor">|</span> </p>
+		</div>
+
+	</div>
+
+	<div class="section about">
+		<h1>
+			I See things differently
+		</h1>
+		<br><br>
+		<p>
+			My name is Abhishek and I’m a freelance web designer from Mumbai, India. I designed my first website at the age of 16 and since then I am constantly working on improving my skills as a designer. During my carreer I’ve worked on various projects, ranging from simple portfolio sites to sophisticated web apps. I’m also obsessed with small details.
+		</p>
+	</div>
+	
+	<div class="section exp">
+		
+		<div class="slide">
+			<div class="content">
+				<h2>Expertise</h2>
+				<div class="bordertitle"></div>
+				<section>
+					<h3>Programming</h3>
+					<p class="type">C++, c#, Ruby On Rails</p>
+				</section>
+
+				<section>
+					<h3>Web</h3>
+					<p class="type">HTML5, CSS3, Responsive, Foundation, Wordpress, Bootstrap, Jquery</p>
+				</section>
+			</div>
+		</div>
+
+		<div class="slide">
+			<div class="content">
+				<h2>Recent Work</h2>
+				<div class="bordertitle"></div>
+				<section>
+					<h3>Web Design</h3>
+					<p class="type"><a target="_blank" href="http://www.besuccessful.in">besuccessful</a></p>
+					<p class="type"><a target="_blank" href="http://www.fenixproduction.in">Fenix Production</a></p>
+					<p class="type"><a target="_blank" href="http://www.eleganceexpress.net">Elegance Express</a></p>
+				</section>
+				<section>
+					<h3>Web Development</h3>
+					<p class="type">
+						<a target="_blank" href="http://www.dlita-blog.tumblr.com">D'Lita IT Association</a>
+					</p>
+					<p class="type">
+						<a target="_blank" href="http://www.abhishekkambli.wordpress.com">Personal Blog</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="section contact">
+
+			<div class="content">
+
+				<h2>Contact Me</h2>
+				<div class="bordertitle"></div>
+
+				<h3><a href="mailto:abhishekkambli3@gmail.com">abhishekkambli3@gmail.com</a></h3>
+
+				<ul>
+					<li><a href="http://www.github.com/abhishekrocks7" target="_blank">Github</a></li>
+					<li><a href="http://abhishekkambli.tumblr.com" target="_blank">Tumblr</a></li>
+					<li><a href="http://www.instagram.com/abhishekkambli" target="_blank">Instagram</a></li>
+				</ul>
+
+			</div>
+			
+		</div>
+
+</div>
+
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/particle.js"></script>
+<script src="js/fullpage.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    	$('#fullpage').fullpage({navigation:true, slidesNavigation: true, controlArrows: false,});
+	});
+</script>
 
 </body>
 </html>
